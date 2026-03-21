@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Indian Saffron -->
+    <linearGradient id="saffron" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9933"/>
+      <stop offset="100%" stop-color="#E67E22"/>
+    </linearGradient>
+    
+    <!-- White / Silver Gradient -->
+    <linearGradient id="white" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0E0E0"/>
+    </linearGradient>
+    
+    <!-- Indian Green -->
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#138808"/>
+      <stop offset="100%" stop-color="#0E6606"/>
+    </linearGradient>
+    
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <g filter="url(#shadow)">
+    <!-- Base geometric forms symbolizing community, protection, and resolution -->
+    
+    <!-- Top sweeping layer (Saffron) -->
+    <path d="M100,20 C50,20 20,55 20,100 C20,60 55,35 100,35 C145,35 180,60 180,100 C180,55 150,20 100,20 Z" fill="url(#saffron)" />
+    
+    <!-- Bottom sweeping layer (Green) -->
+    <path d="M100,180 C150,180 180,145 180,100 C180,140 145,165 100,165 C55,165 20,140 20,100 C20,145 50,180 100,180 Z" fill="url(#green)" />
+    
+    <!-- Central Modern Shield / Location Pin combined (White with subtle gradient) -->
+    <path d="M100,50 C130,50 150,70 150,100 C150,135 100,175 100,175 C100,175 50,135 50,100 C50,70 70,50 100,50 Z" fill="url(#white)" />
+    
+    <!-- Ashoka Chakra inspired core (Navy Blue #000080) -->
+    <!-- Outer ring -->
+    <circle cx="100" cy="100" r="18" fill="none" stroke="#000080" stroke-width="4" />
+    
+    <!-- Spines of Chakra -->
+    <path d="M100,82 L100,118 M82,100 L118,100 M87.2,87.2 L112.8,112.8 M87.2,112.8 L112.8,87.2" stroke="#000080" stroke-width="2" opacity="0.8" />
+    
+    <!-- Center node point -->
+    <circle cx="100" cy="100" r="5" fill="#000080" />
+  </g>
+</svg>

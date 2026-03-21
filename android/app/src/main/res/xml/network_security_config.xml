@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow all HTTPS traffic (standard secure connections) -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system CAs (includes Let's Encrypt used by Supabase) -->
+            <certificates src="system"/>
+            <!-- Trust user-installed CAs (for debugging with Charles/mitmproxy) -->
+            <certificates src="user"/>
+        </trust-anchors>
+    </base-config>
+    <!-- Explicitly allow Supabase domain -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">supabase.co</domain>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
